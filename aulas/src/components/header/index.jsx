@@ -5,10 +5,10 @@ function Header() {
         <header className={styles.header}>
             <span>estevamjannuzzi4.artstation.com</span>
             <nav>
-                <a href="">Home</a>
-                <a href="">Sobre</a>
-                <a href="">Projetos</a>
-                <a href="">Contatos</a>
+                <a href="/">Home</a>
+                <a href="/sobre">Sobre</a>
+                <a href="/projetos">Projetos</a>
+                <a href="/contatos">Contatos</a>
             </nav>
         </header>
     )
