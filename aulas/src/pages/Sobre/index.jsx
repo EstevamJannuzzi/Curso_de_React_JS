@@ -16,8 +16,8 @@ function Sobre() {
                 <div className={styles.textos}>
                     <h2>Sobre</h2>
 
-                    <p>Sou Estevam Jannuzzi <br />
-                        3D Designer</p>
+                    <p>Sou <span>Estevam Jannuzzi</span> <br />
+                        <strong>3D Designer</strong></p>
 
                     <p>Trabalho com produção de projetos 3D, desde 2010.</p>
 
