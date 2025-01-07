@@ -16,15 +16,28 @@ function Projetos() {
     }, [])
 
     return (
-        <section className={StyleSheet.projetos}>
+        <section className={styles.projetos}>
             <h2>Projetos</h2>
-            <section className={styles.lista}>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </section>
+            {
+                repositories.length > 0 ? (
+                    <section className={styles.lista}>
+                        {
+                            repositories.map(
+                                (repo) => (
+                                    <Card
+                                        key={repo.id}
+                                        name={repo.name}
+                                        description={repo.description}
+                                        html_url={repo.html_url}
+                                    />
+                                )
+                            )
+                        }
+                    </section>
+                ) : (
+                    <p>Carregando repositório...</p>
+                )
+            }
         </section>
     )
 }
